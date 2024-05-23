@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Bebas_Neue";
+    src: url("../src/Assets/fonts/BebasNeue-Regular.ttf");
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Bebas_Neue", serif;
+
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+
+}
+.app {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+}

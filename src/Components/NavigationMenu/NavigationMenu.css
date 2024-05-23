@@ -1,0 +1,264 @@
+.nav-menu {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.nav-container {
+    display: flex;
+    height: 100%;
+    width: auto;
+    align-items: center;
+}
+.nav-container p {
+    color: black;
+}
+.nav-container:nth-child(1) img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+
+.nav-container:nth-child(1) img:hover {
+    rotate: 15deg;
+}
+
+.transformer-menu-wrapper {
+    display: none;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.transformer-menu {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-stick {
+    display: flex;
+    height: 4px;
+    background: black;
+    width: auto;
+    transition: 0.3s;
+}
+
+.first-stick {
+    width: 20px;
+}
+
+.second-stick {
+    width: 40px;
+}
+
+.third-stick {
+    width: 20px;
+    align-self: end;
+}
+
+.transformer-menu.rotated .first-stick {
+    rotate: 46deg;
+    margin-left: 2px;
+}
+
+.transformer-menu.rotated .second-stick {
+    rotate: 135deg;
+
+}
+
+.transformer-menu.rotated .third-stick {
+    width: 22px;
+    rotate: 46deg;
+}
+
+.nav-container:nth-child(3) {
+    gap: 10px;
+}
+
+.nav-container:nth-child(3) p {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.nav-log-block {
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 20px;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.nav-log-block .join-button {
+    width: 105px;
+    height: 40px;
+    background: greenyellow;
+    border-radius: 20px 0 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-log-block .join-button:hover {
+    background: black;
+    color: var(--green-color);
+}
+
+.nav-log-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-log-item p {
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-container a {
+    text-decoration: none;
+}
+
+.nav-log-item img {
+    width: 25px;
+    height: 25px;
+    transition: 0.5s;
+}
+.nav-log-item:hover .log-in-entry {
+    rotate: 720deg;
+}
+.nav-log-item:hover>p {
+    color: orange;
+}
+
+.nav-container a>p:hover {
+    cursor: pointer;
+    color: var(--orange-color)!important;
+    scale: 1.1;
+}
+.nav-container-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 9999999;
+    opacity: 0;
+    transition: 400ms ease;
+    pointer-events: none;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 400px;
+}
+.nav-container-mobile.open {
+    opacity: 1;
+    pointer-events: all;
+}
+.nav-container-mobile.open a {
+    text-decoration: 0;
+}
+.nav-container-mobile.open a>p {
+    font-size: 28px!important;
+    margin: 0;
+    font-weight: 400;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menu-log-in>p {
+    font-size: 28px!important;
+    margin: 0;
+    font-weight: 400;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-container-mobile.open p:focus {
+    background: var(--green-color);
+}
+
+.menu-log-in {
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .nav-container:nth-child(3) p {
+        font-size: 16px;
+    }
+
+    .nav-log-item>p {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .nav-container:nth-child(1) img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .transformer-menu-wrapper {
+        display: flex;
+    }
+
+
+    .nav-container:nth-child(3) {
+        display: none;
+    }
+    .nav-container:nth-child(1) {
+        width: 230px;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .burger-wrapper {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .nav-menu {
+        height: auto;
+    }
+
+    .nav-log-block {
+        flex-direction: column;
+        gap: 5px;
+        padding-bottom: 10px;
+    }
+
+    .nav-log-block button {
+        width: 100px;
+    }
+    .nav-container:nth-child(1) {
+        width: 130px;
+    }
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    .nav-log-block {
+        padding-right: 20px;
+    }
+    }

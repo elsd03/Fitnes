@@ -1,0 +1,6 @@
+.plans-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}

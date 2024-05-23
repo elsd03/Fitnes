@@ -1,0 +1,322 @@
+.trainers-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.trainers-content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0 20px 0;
+    flex-direction: column;
+}
+
+.trainers-colored-block {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    padding: 100px 350px 100px 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: var(--pink-color);
+
+}
+.trainers-colored-text-container {
+    animation: fadeInRight 2s linear;
+}
+
+.trainers-colored-text-container b {
+    font-size: 70px;
+}
+
+.trainers-colored-text-container p {
+    font-size: 30px;
+    width: 400px;
+
+}
+
+.fitness-back-img {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    top: 400px;
+    right: 30%;
+    border-radius: 45% 45% 0 0;
+    animation: appearFromLeft 2s ease;
+}
+
+.trainers-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.trainers-info-text {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 300px 0 80px 0;
+}
+
+.trainers-info-text b {
+    font-size: 70px;
+}
+
+.trainers-info-text p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.trainers-photo-info-block {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.trainers-info-row {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.trainers-info-row-container {
+    display: flex;
+    width: 350px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
+    gap: 20px;
+}
+
+.trainers-row-photo-item {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.trainers-row-photo-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.trainers-row-photo-item h2 {
+    margin: 0;
+    color: blue;
+    font-size: 25px;
+}
+
+.trainers-row-photo-item p {
+    font-size: 20px;
+}
+
+.trainers-row-text-item {
+    display: flex;
+    width: auto;
+    height: auto;
+
+}
+
+.trainers-row-text-item p {
+    font-size: 18px;
+}
+
+.trainers-classes-block {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    gap: 15px;
+    padding-bottom: 100px;
+}
+
+.trainers-classes-block p {
+    font-size: 18px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1550px) {
+    .fitness-back-img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .trainers-info-text {
+        padding: 200px 0 80px 0;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .fitness-back-img {
+        width: 250px;
+        height: 300px;
+        right: 25%;
+    }
+    .trainers-info-row-container {
+        width: 320px;
+    }
+
+}
+@media only screen and (max-width: 1100px) {
+    .fitness-back-img {
+        right: 20%;
+    }
+    .trainers-info-row-container {
+        width: 250px;
+    }
+    .trainers-row-photo-item p {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+
+    .trainers-info-text {
+        padding: 140px 0 80px 0;
+    }
+
+    .trainers-info-text b {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .trainers-colored-text-container b {
+        font-size: 50px;
+    }
+    .trainers-colored-text-container p {
+        font-size: 20px;
+    }
+    .fitness-back-img {
+        top: 150px;
+        right: 10%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .trainers-colored-block {
+        padding: 50px 250px 50px 0;
+    }
+    .fitness-back-img {
+        top: 150px;
+        right: 10%;
+        width: 170px;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .trainers-colored-text-container b {
+        font-size: 30px;
+    }
+    .trainers-colored-text-container p {
+        font-size: 15px;
+        width: 280px;
+    }
+    .fitness-back-img {
+        top: 125px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .trainers-info-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .trainers-info-row-container {
+        width: 290px;
+        gap: 0;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .trainers-row-text-item p {
+        font-size: 15px;
+    }
+
+    .trainers-row-photo-item {
+        gap: 10px;
+    }
+
+    .trainers-row-photo-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .trainers-row-photo-item p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .trainers-photo-info-block {
+        gap: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .trainers-colored-text-container p {
+        font-size: 16px;
+        width: 290px;
+    }
+
+    .fitness-back-img {
+        display: none;
+    }
+
+    .trainers-colored-block {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .trainers-info-text {
+        padding: 20px 0;
+    }
+
+    .trainers-info-text b {
+        font-size: 24px;
+    }
+
+    .trainers-info-text p {
+        font-size: 16px;
+        width: 290px;
+    }
+
+    .trainers-classes-block {
+        text-align: center;
+        justify-content: center;
+        width: 290px;
+        padding-bottom: 20px;
+    }
+
+    .trainers-photo-info-block {
+        padding-bottom: 20px;
+    }
+
+}

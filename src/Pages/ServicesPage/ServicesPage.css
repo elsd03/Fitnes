@@ -1,0 +1,135 @@
+.services-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+.services-main-content {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services-main-text-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--pink-color);
+    padding: 120px 0;
+}
+.text-container-block {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    margin-right: 500px;
+    animation: fadeInRight 2s linear;
+}
+.text-container-block b {
+    font-size: 70px;
+}
+.text-container-block p {
+    font-size: 20px;
+}
+.services-main-content>b {
+    font-size: 80px;
+    padding: 70px 0;
+}
+.services-classes-container {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+}
+.classes-block {
+    display: flex;
+    width: 900px;
+    height: auto;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+.classes-block-item {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+.classes-block-item:nth-child(1) {
+    width: auto!important;
+}
+.classes-block-item b {
+    font-size: 40px;
+}
+.classes-block-item p {
+    font-size: 20px;
+}
+.classes-block-item:nth-child(2) {
+    gap: 15px;
+}
+.classes-block-item:nth-child(2) b {
+    font-size: 20px;
+}
+.classes-block-item:nth-child(2) p {
+    font-size: 15px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .services-main-text-container {
+        padding: 80px 0;
+    }
+    .text-container-block {
+        margin-right: 300px;
+    }
+    .text-container-block b {
+        font-size: 40px;
+    }
+    .text-container-block p {
+        font-size: 18px;
+    }
+    .services-main-content>b {
+        font-size: 50px;
+        padding: 50px 0;
+    }
+    .classes-block {
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .services-main-text-container {
+        padding: 50px 0;
+        text-align: center;
+    }
+    .text-container-block {
+        margin-right: 0;
+    }
+    .services-main-content>b {
+        font-size: 40px;
+        padding: 30px 0;
+    }
+    .classes-block {
+        flex-direction: column;
+        width: 280px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .classes-block-item {
+        height: auto;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .text-container-block {
+        margin-right: 0;
+    }
+}
+
+

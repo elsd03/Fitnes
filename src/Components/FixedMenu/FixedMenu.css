@@ -1,0 +1,132 @@
+.circle-menu-arrow {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: mediumslateblue;
+    z-index: 99;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.circle-menu-arrow img {
+    rotate: 270deg;
+    width: 20px;
+    height: 20px;
+    filter: invert();
+}
+
+
+.vertical-fixed-block {
+    display: flex;
+    width: 50px;
+    height: 200px;
+    background: mediumslateblue ;
+    z-index: 99;
+    position: fixed;
+    left: 40px;
+    top: 40%;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.vertical-fixed-block a>img {
+    width: 25px;
+    height: 25px;
+    filter: invert();
+    cursor: pointer;
+    transition: 0.3s;
+}
+.vertical-fixed-block a>img:hover {
+    filter: unset;
+}
+
+.horizontal-fixed-block {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background: mediumslateblue;
+    z-index: 99;
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.horizontal-fixed-block p {
+    transition: 0.3s;
+    color: white;
+}
+.horizontal-fixed-block img {
+    width: 35px;
+    height: 35px;
+    filter: invert();
+    transition: 0.3s;
+}
+.horizontal-fixed-block:hover img {
+    filter: unset;
+}
+.horizontal-fixed-block:hover p {
+    color: black;
+}
+@media only screen and (max-width: 850px) {
+    .circle-menu-arrow {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        left: 10px;
+    }
+    .vertical-fixed-block {
+        height: 120px;
+        width: 40px;
+        left: 10px;
+        gap: 5px;
+    }
+    .vertical-fixed-block a>img {
+        height: 20px;
+        width: 20px;
+    }
+    .horizontal-fixed-block {
+        width: auto;
+        padding: 0 10px 0 10px ;
+        height: 30px;
+        border-radius: 10px 10px 0 0;
+        right: 10px;
+    }
+    .horizontal-fixed-block img {
+        display: none;
+    }
+    .horizontal-fixed-block p {
+        font-size: 10px;
+    }
+
+}
+@media only screen and (max-width: 650px) {
+    .vertical-fixed-block {
+        height: 100px;
+        width: 30px;
+        left: 5px;
+    }
+    .vertical-fixed-block a>img {
+        width: 15px;
+        height: 15px;
+    }
+    .circle-menu-arrow {
+        width: 30px;
+        height: 30px;
+        left: 5px;
+    }
+    .circle-menu-arrow img {
+        width: 15px;
+        height: 15px;
+    }
+}

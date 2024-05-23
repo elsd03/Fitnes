@@ -1,0 +1,137 @@
+.log-in-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e1dfdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999999999999999999999999;
+}
+.log-in-modal-container {
+    flex-direction: column;
+    display: flex;
+    width: 500px;
+    height: 320px;
+    align-items: center;
+    justify-content: center;
+    background: #3d3d3d;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 45px;
+
+}
+.log-in-modal-container .log-in-close {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+.log-in-modal-container .log-in-close:hover {
+    scale: 1.1;
+
+}
+.log-in-modal-container form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+.log-in-modal-container form p {
+    color: #c2c2c2!important;
+    font-size: 16px!important;
+}
+.log-in-modal-container form p:hover {
+    scale: 1!important;
+    color: white!important;
+}
+.log-in-input {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.log-in-input input {
+    height: 100%;
+    width: 200px;
+    outline: 0;
+    border: 0;
+    padding-left: 10px;
+    border-radius: 0 5px 5px 0;
+    font-size: 18px;
+}
+.user-img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    border-radius: 5px 0 0 5px;
+
+}
+.user-img img {
+    width: 40px;
+    height: 40px;
+}
+.key-image {
+    width: 32px!important;
+    height: 32px!important;
+}
+.log-in-options {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: #c2c2c2;
+}
+.log-in-options p {
+    margin: 0;
+    color: #c2c2c2!important;
+    font-size: 16px!important;
+}
+.log-in-options p:hover {
+    color: #ffffff!important;
+    scale: 1!important;
+}
+.log-in-options label {
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.log-in-options label p {
+    margin: 0;
+    text-align: center;
+}
+.log-in-modal-container .login-button {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-image: linear-gradient(to right, #f5c047 0%, #f46b1e 51%, #fdc642 100%);
+}
+
+@media only screen and (max-width: 750px) {
+    .log-in-modal-container {
+        width: 290px;
+        height: 320px;
+        padding-top: 50px;
+    }
+    .log-in-input input {
+        width: 180px;
+    }
+    .log-in-modal-container .log-in-close {
+        width: 25px;
+        height: 25px;
+    }
+}
